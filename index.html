@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lumine Music</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Lumine Music</h1>
+  </header>
+
+  <main>
+    <h2>Playlist</h2>
+    <ul id="playlist">
+      <li data-src="music/musica1.mp3" data-thumb="https://via.placeholder.com/512.png?text=Thumb+1">
+        <img src="https://via.placeholder.com/512.png?text=Thumb+1" alt="Música 1" class="thumb">
+        Música 1
+      </li>
+      <li data-src="music/musica2.mp3" data-thumb="https://via.placeholder.com/512.png?text=Thumb+2">
+        <img src="https://via.placeholder.com/512.png?text=Thumb+2" alt="Música 2" class="thumb">
+        Música 2
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <div id="player">
+      <img id="current-thumb" src="" alt="Capa da música" style="display:none;">
+      <audio id="audio" controls></audio>
+      <div id="controls">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
